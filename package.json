@@ -1,0 +1,33 @@
+{
+  "name": "started",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "db:start": "sudo docker compose up -d",
+    "mig": "prisma migrate dev",
+    "dev": "tsx watch src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cookie": "^9.1.0",
+    "@fastify/redis": "^6.1.1",
+    "@fastify/secure-session": "^7.1.0",
+    "@paralleldrive/cuid2": "^2.2.2",
+    "@prisma/client": "^5.4.1",
+    "argon2": "^0.31.1",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.23.2",
+    "fastify-type-provider-zod": "^1.1.9",
+    "prisma": "^5.4.1",
+    "resend": "^1.1.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.2",
+    "pino-pretty": "^10.2.3",
+    "tsx": "^3.13.0"
+  }
+}
